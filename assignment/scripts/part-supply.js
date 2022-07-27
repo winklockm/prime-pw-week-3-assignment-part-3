@@ -47,7 +47,17 @@ for(let i=0; i<supplyChanges.length; i++){
 console.log('---  Stretch Goals  ---');
 // 7. Rewrite the `for` loop from #6 as a `for of` loop. 
 console.log('7. Showing supplyChanges with "for of" loop');
-
+for(change of supplyChanges){
+    if(change>0){
+        console.log('Added ' + change + ' parts');
+    }
+    if(change===0){
+        console.log('No change');
+    }
+    if(change<0){
+        console.log('Removed ' + change + ' parts');   // HOW TO REMOVE NEGATIVE SIGN???
+    }
+}
 // 8. Write a loop to determine the total number of parts available by
 //    adding up all the numbers in the 'supplyChanges' array.
 console.log('8. Total supplies available is:');
