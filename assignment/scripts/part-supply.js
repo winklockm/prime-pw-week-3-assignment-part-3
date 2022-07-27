@@ -69,3 +69,11 @@ console.log('8. Total supplies available is:');
 //    no more boxes can be filled.
 //    Then log how many boxes were filled, and how many parts are left over.
 console.log('9. Filling boxes with a "while" loop');
+let boxes = 0;
+let parts= 572;
+while(parts > 6) {
+    boxes ++;
+    parts -= 7;
+}
+console.log('We filled', boxes, 'boxes');
+console.log('There were', parts, 'parts left over.'); // IF OUTSIDE OF THE LOOP WHY DOESN'T IT RETURN 572 FOR PARTS & 0 FOR BOXES?
