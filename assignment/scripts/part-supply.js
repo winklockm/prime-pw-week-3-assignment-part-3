@@ -39,7 +39,7 @@ for(let i=0; i<supplyChanges.length; i++){
         console.log('No Change');
     }
     else if(supplyChanges[i]<0){
-        console.log('Removed', -supplyChanges[i], 'parts');    // HOW TO REMOVE NEGATIVE SIGN???
+        console.log('Removed', -supplyChanges[i], 'parts');
     }
 }
 
@@ -49,13 +49,13 @@ console.log('---  Stretch Goals  ---');
 console.log('7. Showing supplyChanges with "for of" loop');
 for(change of supplyChanges){
     if(change>0){
-        console.log('Added ' + change + ' parts');
+        console.log('Added', change, 'parts');
     }
-    if(change===0){
+    else if(change===0){
         console.log('No change');
     }
-    if(change<0){
-        console.log('Removed ' + change + ' parts');   // HOW TO REMOVE NEGATIVE SIGN???
+    else if(change<0){
+        console.log('Removed', -change, 'parts');
     }
 }
 // 8. Write a loop to determine the total number of parts available by
