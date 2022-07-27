@@ -33,13 +33,13 @@ console.log(supplyChanges);
 console.log('6. Showing supplyChanges...');
 for(let i=0; i<supplyChanges.length; i++){
     if(supplyChanges[i]>0){
-        console.log('Added ' + supplyChanges[i] + ' parts');
+        console.log('Added ', supplyChanges[i], ' parts');
     }
-    if(supplyChanges[i]===0){
+    else if(supplyChanges[i]===0){
         console.log('No Change');
     }
-    if(supplyChanges[i]<0){
-        console.log('Removed ' + supplyChanges[i] + ' parts');    // HOW TO REMOVE NEGATIVE SIGN???
+    else if(supplyChanges[i]<0){
+        console.log('Removed ', -supplyChanges[i], ' parts');    // HOW TO REMOVE NEGATIVE SIGN???
     }
 }
 
